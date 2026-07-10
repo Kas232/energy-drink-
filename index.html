@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VOLTIS — Fuel the Surge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanlines"></div>
+<div class="grain"></div>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">VOLT<span class="bolt">⚡</span>IS</a>
+    <nav class="nav-links">
+      <a href="#flavors">Flavors</a>
+      <a href="#spec">Spec Sheet</a>
+      <a href="#drop">Drop</a>
+    </nav>
+    <a href="#drop" class="nav-cta">Shop Now</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div id="canvas-wrap"><canvas id="can-canvas"></canvas></div>
+
+  <div class="hero-content">
+    <p class="eyebrow">// 230mg CAFFEINE · ZERO SUGAR</p>
+    <h1 class="glitch" data-text="FEEL THE SURGE">FEEL THE SURGE</h1>
+    <p class="hero-sub">A current, bottled. VOLTIS is engineered energy for people who don't do idle. Drag the can. Feel the charge.</p>
+    <div class="hero-actions">
+      <a href="#drop" class="btn btn-primary">Shop the Drop</a>
+      <a href="#spec" class="btn btn-ghost">Read the Spec Sheet</a>
+    </div>
+  </div>
+
+  <div class="meter">
+    <span class="meter-label">CANS CRACKED TODAY</span>
+    <span class="meter-value" id="meter-value">000,000</span>
+  </div>
+
+  <div class="scroll-cue">SCROLL <span>↓</span></div>
+</section>
+
+<!-- FLAVORS -->
+<section class="flavors" id="flavors">
+  <div class="section-head">
+    <p class="eyebrow">// THE LINEUP</p>
+    <h2>Four Charges. One Current.</h2>
+  </div>
+
+  <div class="flavor-grid">
+
+    <article class="flavor-card" style="--accent:#00F0FF;">
+      <div class="flavor-top">
+        <span class="flavor-volt">12V</span>
+        <span class="flavor-tag">Signature</span>
+      </div>
+      <h3>Cyan Storm</h3>
+      <p>Blue raspberry &amp; electric mint. The one that started it.</p>
+      <div class="flavor-bar"><span style="width:78%;"></span></div>
+      <div class="flavor-meta"><span>230mg</span><span>0g sugar</span></div>
+    </article>
+
+    <article class="flavor-card" style="--accent:#FF2E63;">
+      <div class="flavor-top">
+        <span class="flavor-volt">14V</span>
+        <span class="flavor-tag">High Draw</span>
+      </div>
+      <h3>Plasma Punch</h3>
+      <p>Pomegranate, blood orange &amp; a mean kick of guarana.</p>
+      <div class="flavor-bar"><span style="width:92%;"></span></div>
+      <div class="flavor-meta"><span>280mg</span><span>0g sugar</span></div>
+    </article>
+
+    <article class="flavor-card" style="--accent:#D4FF00;">
+      <div class="flavor-top">
+        <span class="flavor-volt">10V</span>
+        <span class="flavor-tag">Low Static</span>
+      </div>
+      <h3>Acid Lime</h3>
+      <p>Lime, yuzu &amp; ginger. Sharp, clean, no crash.</p>
+      <div class="flavor-bar"><span style="width:64%;"></span></div>
+      <div class="flavor-meta"><span>180mg</span><span>0g sugar</span></div>
+    </article>
+
+    <article class="flavor-card" style="--accent:#6C1FFF;">
+      <div class="flavor-top">
+        <span class="flavor-volt">16V</span>
+        <span class="flavor-tag">Overclock</span>
+      </div>
+      <h3>Violet Surge</h3>
+      <p>Grape &amp; black cherry, dialed past the redline.</p>
+      <div class="flavor-bar"><span style="width:100%;"></span></div>
+      <div class="flavor-meta"><span>300mg</span><span>0g sugar</span></div>
+    </article>
+
+  </div>
+</section>
+
+<!-- SPEC SHEET -->
+<section class="spec" id="spec">
+  <div class="section-head">
+    <p class="eyebrow">// OSCILLOSCOPE READOUT</p>
+    <h2>What's Actually In The Can</h2>
+  </div>
+
+  <div class="spec-panel">
+    <svg class="spec-wave" viewBox="0 0 800 120" preserveAspectRatio="none">
+      <polyline id="wave-line" points="" fill="none" stroke="#00F0FF" stroke-width="2"/>
+    </svg>
+    <div class="spec-grid">
+      <div class="spec-row"><span>CAFFEINE</span><span class="mono">230 mg</span></div>
+      <div class="spec-row"><span>TAURINE</span><span class="mono">1,000 mg</span></div>
+      <div class="spec-row"><span>B-VITAMIN COMPLEX</span><span class="mono">B3 / B6 / B12</span></div>
+      <div class="spec-row"><span>SUGAR</span><span class="mono">0 g</span></div>
+      <div class="spec-row"><span>CALORIES</span><span class="mono">5 kcal</span></div>
+      <div class="spec-row"><span>CAN VOLUME</span><span class="mono">355 ml</span></div>
+      <div class="spec-row"><span>TIME TO CHARGE</span><span class="mono">≈ 11 min</span></div>
+      <div class="spec-row"><span>SOURCE</span><span class="mono">Cold-brewed + synthetic</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DROP / NEWSLETTER -->
+<section class="drop" id="drop">
+  <h2>First Charge Is Free</h2>
+  <p>Join the grid. New drops, restocks, and voltage-only discounts — no spam, just static.</p>
+  <form class="drop-form" onsubmit="return false;">
+    <input type="email" placeholder="you@yourinbox.com" required>
+    <button type="submit" class="btn btn-primary">Plug In</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <span>VOLT<span class="bolt">⚡</span>IS © 2026</span>
+  <span class="footer-note">Built with HTML, CSS, JS &amp; Three.js — no framework, just current.</span>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
