@@ -23,6 +23,11 @@ No frameworks, no build step — clone it and open `index.html`.
 - `script.js` — Three.js scene + interactions (loaded from cdnjs, r128)
 - Fonts: Anton (display), Space Grotesk (body), JetBrains Mono (data/labels) via Google Fonts
 
+  ## live Demo
+
+  https://kas232.github.io/energy-drink-/
+  
+
 ## Run locally
 
 Just open `index.html` in a browser. For live-reload during development:
